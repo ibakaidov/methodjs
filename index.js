@@ -58,7 +58,7 @@ class Methodjs {
     loadTreeFromDir(path) {
         let allObjectDirs = fs.readdirSync(path).map((dirPath) => { return PATH.join(path, dirPath); });
         allObjectDirs.forEach((objectDirPath) => {
-            let allFilesPath = fs.readdirSync(objectDirPath).map((filePath) => { return PATH.join(object, filePath) })
+            let allFilesPath = fs.readdirSync(objectDirPath).map((filePath) => { return PATH.join(objectDirPath, filePath) })
             allFilesPath.forEach((filePath)=>{require(filePath)})
         });
 
