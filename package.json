@@ -1,0 +1,19 @@
+{
+  "name": "methodjs",
+  "version": "0.0.0",
+  "description": "Framework for create API",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [
+    "express",
+    "rest",
+    "api"
+  ],
+  "author": "ibakaidov",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.15.3",
+    "mocha": "^3.4.2"
+  }
+}
