@@ -20,7 +20,7 @@ const methodjs = require('methodjs').getInstance();
 
 methodjs.eco.db = require('./libs/somedb'); //add your db module to ecosystem
 
-methodjs.loadTreeFromDir(__durname+'/methods/'); // load all modules from dir
+methodjs.loadTreeFromDir(__dirname+'/methods/'); // load all modules from dir
 
 methodjs.express(app); //register  urls for methods in your express.js app
 
